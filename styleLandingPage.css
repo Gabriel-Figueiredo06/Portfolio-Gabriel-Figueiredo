@@ -1,0 +1,498 @@
+@font-face {
+  font-family: Alata;
+  src: url('Alata-Regular.ttf') format(truetype);
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: Ague;
+  src: url('Ague-Regular.otf') format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #111; /*ANTES : #141312*/
+   overflow-x: hidden;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+ 
+}
+
+.pagina-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 30px;
+}
+
+.div-minhaimagem {
+  background-color: #333;
+  height: 260px;
+  width: 300px;
+  border-radius: 5px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+ box-shadow: 0px 0px 4px #ffd900;
+  border: 1px solid #ffd90056;
+}
+
+.div-minhaimagem:hover{
+  box-shadow: 0px 0px 4px rgb(255, 217, 0);
+  border: 1px solid rgb(255, 217, 0);
+}
+
+.foto-area {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#minhafoto {
+  width: 250px;
+  height: 250px;
+  border-radius: 150%;
+  object-fit: cover;
+}
+
+.meunome {
+  background: linear-gradient(10deg ,#000, #222);
+  color: rgb(248, 248, 248);
+  width: 80%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: 'Alata';
+}
+
+/* REDES SOCIAIS ----------------------------------------------------------------------------------------------------------*/
+
+.container-redes .redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociais {
+  display: flex;
+  width: 300px;
+  background-color: #333; 
+  margin-left: 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 4px #ffd900;
+  border: 1px solid #ffd90056;
+}
+
+.redes-sociais:hover{
+  box-shadow: 0px 0px 4px rgb(255, 217, 0);
+  border: 1px solid rgb(255, 217, 0);
+}
+
+.minhas-redes {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.img-redes {
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  border-radius: 60px;
+}
+
+#img-lkd {
+  width: 43px;
+}
+
+/* SOBRE MIM ---------------------------------------------------------------------------------------------- */
+
+.section-principal {
+  display: flex;
+  height: 300px;
+  width: 950px;
+  margin-right: 3px;
+}
+
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333; 
+  width: 1000px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 4px #ffd900;
+  border: 1px solid #ffd90056;
+}
+
+.sobre-mim:hover{
+  box-shadow: 0px 0px 4px rgb(255, 217, 0);
+  border: 1px solid rgb(255, 217, 0);
+}
+
+.titulo-sobre-mim {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Ague';
+}
+
+.txt-sobre-mim {
+  color: white;
+  text-align: center;
+  font-family: 'Alata';
+}
+
+/* TECNOLOGIAS ----------------------------------------------------------------------------------------------------- */
+
+.container-tecnologias {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -63px;
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  margin-right: 100px;
+}
+
+.imagens-tecnologias {
+  background-color: #333; 
+  width: 400px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  gap: 50px;
+  box-shadow: 0px 0px 4px #ffd900;
+  border: 1px solid #ffd90056;
+}
+
+.imagens-tecnologias:hover{
+  box-shadow: 0px 0px 4px rgb(255, 217, 0);
+  border: 1px solid rgb(255, 217, 0);
+}
+
+.img-tecnologias {
+  width: 52px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.img-tecnologias:hover {
+  transform: scale(1.2);
+}
+
+/* SIDEBAR ANIMADA ----------------------------------------------------------------------------------- */
+
+.sidebar-container {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  z-index: 999;
+  margin-left: 37px;
+}
+
+.info {
+  background: linear-gradient(-80deg ,#333, #8d8d8d0a, #111);
+  width: 30px;
+  height: 170px;
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px #ffd900;
+  border: 1px solid #ffd90056;
+}
+
+.info:hover{
+  box-shadow: 0px 0px 4px rgb(255, 217, 0);
+  border: 1px solid rgb(255, 217, 0);
+}
+
+.info div {
+  margin-bottom: 15px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.746);
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.info-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-container:hover .info {
+  width: 170px;
+}
+
+.sidebar-container:hover .info-text {
+  opacity: 1;
+}
+
+
+.info a{
+  text-decoration: none;
+}
+
+.info:hover{
+  background-color: rgba(195, 185, 0, 0.273);
+}
+
+
+.minha-info:hover {
+  background-color: rgba(244, 227, 130, 0.603);
+  border-radius: 6px;
+}
+
+/*HABILIDADES ------------------------------------------------------------------------------------------------------ */
+.container-hab{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 325px;
+}
+
+.div-habilid{            /*COLOCA A SECTION NA POSIÇÃO QUE EU QUERO NA TELA*/  
+display: flex;
+justify-content: space-around;/* CENTRALIZA A DIV */
+
+
+}
+
+.habilidades{          /*CONFIGURA A DIV DOS CARDS*/
+  background: linear-gradient(35deg,#a3910679,#d3bb023f , #222, #4444446c);
+  width: 180px;
+  height: 180px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px 48px;
+  margin: 25px;
+  box-shadow: 0px 0px 10px rgb(242, 205, 0);
+  border: 1px solid rgb(255, 217, 0);
+}
+
+.habilidades h3{
+  font-size: 22px;
+  color: rgba(232, 233, 233, 0.879);
+  font-family: 'Ague';
+  font-weight: normal;
+}
+
+.img-cards{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  mix-blend-mode: darken;
+
+}
+
+
+
+
+
+/*PROJETOS ----------------------------------------------------------------------------------------------------------------------------- */
+.projetos {   /* CONFIGURAÇAO DA DIV QUE NAO DA PRA VER (A DIV DE FORA) */
+  position: absolute;
+  display: flex; 
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -7px;
+  
+}
+
+.alinhamento-imgs{
+  display: flex;
+  flex-direction: row;
+}
+
+.meus-projetos {    /* CONFIGURAÇAO DA DIV QUE DA PRA VER */
+  margin: 20px;
+  font-size: 17px;
+  background-color: #444;
+  width: 1400px;
+  border-radius: 5px;
+   ;
+}
+
+.meus-projetos h1{     /* CENTRALIZA O H1 */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Ague';
+  font-weight: normal;
+
+}
+
+.imagens img{       /* DEFINE O TAMANHO DA IMAGEMA */
+  width: 200px;
+  height:100px; 
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.imagens{
+  background-color: #91919130; /* COLOCA A COR DE FUNDO NAS IMAGENS DOS PROJETOS */
+  margin-left: 30px;
+  border-radius: 5px;
+  height: 120px;
+  width: 220px;
+
+}
+
+.imagens{    /*  TRANSIÇÃO DA ESCALA DOS PROJETOS  */
+  transition: transform 0.3s ease; /* já começa suave */
+}
+
+.imagens:hover{
+  transform: scale(1.1);
+}
+
+.img-projetos{
+  display: flex;
+  align-items: center;
+  height: 130px;
+  width: 260px;
+ 
+}
+
+.secao-formacao{ /* SEÇÃO DE TRÁS DA FORMAÇÃO -----------------------------------------------------------------  */
+  position: absolute;
+  display: flex; 
+  width: 97%;
+  height: 330px;
+  justify-content: center;
+  margin-top: 290px;
+  margin-left: 1px;
+}
+
+.minha-formacao{
+  font-size: 17px;
+  background-color: #444;
+  width: 1400px;
+  border-radius: 5px;
+  
+}
+
+.img-certificados{
+  display: flex;
+  align-items: center;
+  height: 130px;
+  width: 260px;
+ 
+}
+
+.imagens-certificados img{       /* DEFINE O TAMANHO DA IMAGEMA */
+  width: 200px;
+  height:100px; 
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.desc-formacao{
+  margin-left: 20px;
+  color: white;
+  font-family: 'Alata';
+}
+
+
+.img-formacao img{
+  width: 400px;
+  height:200px; 
+  margin: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.imagens-formacao{
+  background-color: #919191a3; /* COLOCA A COR DE FUNDO NAS IMAGENS DOS PROJETOS */
+  margin-left: 30px;
+  border-radius: 5px;
+  height: 220px;
+  width: 420px;
+
+}
+
+.footer{
+  background: linear-gradient(490deg,#222, #575757);
+  height: 120px;
+  display: flex;
+  flex-direction: column; 
+  position: absolute;
+  top: 160%; 
+  left: 050%;
+  transform: translate(-50%, -50%);
+  width: 103.5%;
+  
+ 
+}
+
+.tit-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: rgb(171, 171, 171);
+  font-family: 'Alata';
+}
+
+.footer img{
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+  margin-top: -10px;
+}
+
+.icones-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.icn-footer-img{
+  filter: brightness(0) invert(1); /* faz branco virar preto */
+  transition: filter 0.3s ease;
+}
+
+.icn-footer-img:hover{
+ filter: brightness(0) saturate(100%) sepia(1) hue-rotate(20deg) brightness(1.2);
+}

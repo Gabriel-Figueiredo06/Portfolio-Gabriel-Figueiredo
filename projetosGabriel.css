@@ -1,0 +1,106 @@
+@font-face {
+  font-family: Alata;
+  src: url('Alata-Regular.ttf') format(truetype);
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: Ague;
+  src: url('Ague-Regular.otf') format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    background-color: #111;
+}
+
+.org-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.container-pjts{
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo{
+    background: linear-gradient(10deg ,#000, #222);
+    width: 400px;
+    height: auto;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.titulo h1{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;    
+    font-family: 'Ague';  
+}
+
+.projetos{
+    background-color: #222;
+    height: 450px;
+    width:430px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin: 5px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 4px #ffd900;
+    border: 1px solid #ffd9008a;
+    
+}
+
+.img-project{
+    background-color: #d8d8d8;
+    height: 173px;
+    width: 344px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 40px;
+
+
+}
+
+.img-project img{
+    width: 340px;
+    height: auto;
+   
+}
+
+.desc-projetos{
+    margin-left: 40px;
+    color: white;
+    font-family: 'Alata';
+}
+
+.desc-projetos-pt2{
+    margin-left: 50px;
+    color: rgb(249, 255, 71);
+    width: 170px;
+    font-family: 'Ague';
+}
+
+#img-clinica{
+    margin-top: -20px;
+}
+
+#port-pjct{
+    margin-top: -19px;
+}
+
+#calculadora{
+    margin-top: -23px;
+}
+

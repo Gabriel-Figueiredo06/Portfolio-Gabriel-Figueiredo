@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Alata;
+    src: url('Alata-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Ague;
+    src: url('Ague-Regular.otf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #222;
+    height: 100%;
+}
+
+.container-foto{
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    width: 60%;
+
+
+}
+
+.minha-img img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;   
+    object-fit: cover;
+    border: solid #ffd900;
+}
+
+.minha-img{
+    margin-left: 100px;
+    width: 30%;
+    filter: drop-shadow(-120px -102px 190px #ffd900 );
+}
+
+.container-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-info a{
+    text-decoration: none;
+}
+
+.info{
+    color: white;
+    margin-top: 15px; 
+    text-decoration: none;
+   font-family: 'Alata';
+   position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.info::after {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* ajusta a distância da linha */
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ffd900;
+    transition: all 0.3s linear;
+    transform: translateX(-50%);
+}
+
+.info:hover::after {
+    width: 100%;
+}
+
+.redes-sociais{
+    margin-top: 7px;
+    margin-left: 150px;
+}
+
+.redes-sociais img{
+        width: 40px;
+        margin: 15px;
+
+}
+
+.redes:hover{
+    filter: drop-shadow(0 0 10px #ffd900 );
+}
+
+.info:hover{
+    filter: drop-shadow(0 0 10px #ffd900 );
+}
+
+.container-tit {
+    position: relative;
+    height: 200px;
+}
+
+.tit {
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 660px;
+}
+
+.tit h1 {
+    color: white;
+    margin: 0;
+    font-size: 70px;
+    font-family: 'Ague';
+   
+}
+
+.tit h3 {
+    font-size: 30px;
+    color: white;
+    margin-left: 6px;
+    margin-top: -2px;
+    font-family: Alata;
+    font-weight: normal;
+    
+}
+
+.tit a{
+    text-decoration: none;
+    color: rgb(6, 0, 6);
+    font-family: 'Alata';     
+}
+
+.btn-port{
+    background-color: #ffd901fb;
+    width: 100px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.btn-port:hover{
+    filter: drop-shadow(0 0 12px #ffd900 );
+}
