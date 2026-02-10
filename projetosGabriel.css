@@ -25,6 +25,9 @@ body{
 .container-pjts{
     display: flex;
     flex-direction: row;
+    width: 101%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .titulo{
@@ -44,7 +47,7 @@ body{
 }
 
 .projetos{
-    background-color: #222;
+    background-color: #11111100;
     height: 450px;
     width:430px;
     display: flex;
@@ -61,7 +64,6 @@ body{
 }
 
 .img-project{
-    background-color: #d8d8d8;
     height: 173px;
     width: 344px;
     display: flex;
